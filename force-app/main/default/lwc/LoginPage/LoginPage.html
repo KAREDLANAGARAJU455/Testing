@@ -1,0 +1,18 @@
+<template>
+	<lightning-modal-header></lightning-modal-header>
+	<lightning-modal-body >
+			<div class="slds-align_absolute-center">
+					<lightning-input label="username" value={username} placeholder="enter your username" id="username"></lightning-input>
+					<lightning-input label="email" value={emailaddress} placeholder="enter your emailaddress" id="emailaddress"></lightning-input>
+
+			</div>
+	</lightning-modal-body>
+
+	<lightning-modal-footer>
+			<lightning-button-group>
+					<lightning-button label="cancel" onclick={cancelHandler}></lightning-button>
+					<lightning-button label="Login" onclick={loginHandler}></lightning-button>
+			</lightning-button-group>
+	</lightning-modal-footer>
+
+</template>
